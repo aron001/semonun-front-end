@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import Link from 'next/link'
 export default function Bannar() {
   return (
     <div className="h-screen w-full  bg-primary pt-32 top-0 flex flex-col-reverse md:flex-row ">
@@ -20,12 +20,18 @@ export default function Bannar() {
             velit interdum, ac aliquet odio mattis.
           </p>
           <div className="flex flex-row items-center justify-between">
-            <button className="md:p-3 p-2 rounded-full outline w-[40%] outline-white bg-orange text-white font-bold">
-              Create Events
-            </button>
-            <button className="md:p-3 p-[7px] rounded-full outline w-[40%] outline-textprimary bg-white text-textprimary  font-bold">
-              Browse Events
-            </button>
+          
+            <Link className='px-4 py-3 ml-5 md:ml-32 rounded-full outline w-[78%]  md:w-[40%] outline-white bg-orange text-white font-bold' href={'/'}>
+                    
+            <Link href='/'>Create Events </Link>
+                        
+                    </Link>
+                    <Link className='px-4 py-3 ml-5 md:ml-32 rounded-full outline w-[78%]  md:w-[40%] outline-white bg-orange text-white font-bold' href={'/'}>
+                    
+            <Link href='/searchevent'>Browse Events </Link>
+                        
+                    </Link>
+                
           </div>
         </div>
       </div>

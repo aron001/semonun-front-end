@@ -14,13 +14,15 @@ export default function Page() {
                     <li className=''>Home</li>
                     </Link>
                     <Link className='ml-10 shadow-xl text-[#2A363B] font-bold font-Poppins text-xl bg-green-200 rounded-3xl  pr-7 pl-3 pt-2 pb-3' href={'/'}>
-                    <li className=' '>Events</li>
+                    
+                    <Link href='/'>Events</Link>
                     </Link>
                     <Link className='ml-10 shadow-xl text-[#2A363B] font-bold font-Poppins text-xl bg-green-200 rounded-3xl  pr-7 pl-3 pt-2 pb-3' href={'/'}>
-                    <li className=' '>Signup</li>
+                    <Link href='/signup'>Signup</Link>
                     </Link>
                     <Link className='ml-10 shadow-xl text-[#2A363B] font-bold font-Poppins text-xl bg-green-200 rounded-3xl  pr-7 pl-3 pt-2 pb-3' href={'/'}>
-                    <li className=' '>Login</li>
+                    
+                    <Link href='/login'>Login</Link>
                     </Link>
                     
                 </ul>
